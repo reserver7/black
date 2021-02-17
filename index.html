@@ -7,12 +7,13 @@
 <title>Git 테스트</title>
 </head>
 <script>
-    function aaa(){
-        document.getElementById("a").style
+    function aaa(v){
+        document.getElementById("a").style.backgroundColor = v;
     }
 </script>
 <body>
-    <select id="a" onchange="aaa();">
+    <div id="a" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+    <select onchange="aaa(this.value);">
         <option value="red">red</option>
         <option value="black">black</option>
         <option value="blue">blue</option>
